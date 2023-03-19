@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr1 = [1, 2, 3, 2, 1, 4, 5, 4, 2];
+    let arr2 = [2, 4, 2, 1, 2, 4, 6, 2];
+
+    if (arr1.length < arr2.length){
+        num = arr2.length
+    }else{
+        num = arr1.length
+    }
+
+        let narr = []
+        for (let i = 0; i < num ; i++) {
+            if (arr1[i] === undefined){
+                arr1[i] = 0
+            }else if (arr2[i] === undefined){
+                arr2[i] = 0
+            }
+            narr[i] = arr1[i] + arr2[i]
+        }
+    console.log(narr)
+</script>
+</body>
+</html>

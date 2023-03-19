@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  let arr = [1, 2, 3, 2, 1, 4, 5, 4, 2];
+  function countEach(arr) {
+    let counts = []
+    for (let i = 0; i < arr.length; i++) {
+      let currentN = arr[i]
+      if (currentN in counts){
+        counts[currentN] += 1
+      }else {
+        counts[currentN] = 1
+      }
+
+    }
+    return counts
+  }
+  let counts = countEach(arr);
+  for (let i in counts) {
+    if (counts[i] === 1) {
+      document.write(i + ' ');
+    }
+  }
+</script>
+</body>
+</html>
